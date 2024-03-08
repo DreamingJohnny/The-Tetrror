@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class GroundChecker : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool IsGrounded { get { return isGrounded; } }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private bool isGrounded;
+
+	private void OnTriggerEnter2D(Collider2D collision) {
+		isGrounded = true;
+		Debug.Log("Collision triggered!");
+	}
+
+	private void OnTriggerExit2D(Collider2D collision) {
+		isGrounded = false;
+		Debug.Log("Collision stopped!");
+	}
 }

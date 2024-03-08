@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-5531976660000837381
 MonoBehaviour:
@@ -44,5 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b9ae3cb6096fc4ca30f02280cb5be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocks: []
+  blocks:
+  - {fileID: 2021605618076093005, guid: 411c2a52550a1c84a8b43e6e1d9df408, type: 3}
+  - {fileID: 2021605618076093005, guid: bb3dc04c12a57ec4ba0dd678b879b28a, type: 3}
+  - {fileID: 2021605618076093005, guid: af345a77daf7a804193cb6c9ac8235d4, type: 3}
+  - {fileID: 2021605618076093005, guid: ed5a86fd12db5664fac0c1af75b09910, type: 3}
+  - {fileID: 2021605618076093005, guid: 255ad5ba39688ac4e94b7d132c17cc80, type: 3}
+  - {fileID: 2021605618076093005, guid: 89dfc70dbefc51b45a9a91bcf4128fef, type: 3}
   predictionScreen: {fileID: 0}

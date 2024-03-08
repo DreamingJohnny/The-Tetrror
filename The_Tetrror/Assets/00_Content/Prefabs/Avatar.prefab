@@ -62,7 +62,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.55}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 4764937879077438231}
   - component: {fileID: 5964543456708658263}
   - component: {fileID: 4390418676488758062}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ Transform:
   - {fileID: 4764937879077438231}
   - {fileID: 6947570518249333147}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5738652358267846900
 SpriteRenderer:
@@ -281,7 +281,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.9701071
+  m_Mass: 0.8351071
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
