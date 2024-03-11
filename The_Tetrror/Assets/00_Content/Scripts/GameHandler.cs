@@ -13,9 +13,9 @@ public class GameHandler : MonoBehaviour {
 	[SerializeField] private GameObject testTargetObject;
 
 	void Start() {
-		blockDropper.SetTarget(testTargetObject);
+		//blockDropper.SetTarget(testTargetObject);
 
-		BlockDropper.OnSpawnBlock += blockSpawner.HandleOnBlockSpawn;
+		//BlockDropper.OnSpawnBlock += blockSpawner.HandleOnBlockSpawn;
 
 	}
 

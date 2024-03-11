@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - PostProcessing
-  - 
-  - 
-  - 
+  - Ground&Blocks
+  - Player
+  - Acid
   - 
   - 
   - 
@@ -41,12 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 2435237307
+  - name: Foreground
+    uniqueID: 1485797863
     locked: 0
   - name: Midground
     uniqueID: 608739331
     locked: 0
-  - name: Foreground
-    uniqueID: 1485797863
+  - name: Background
+    uniqueID: 2435237307
     locked: 0

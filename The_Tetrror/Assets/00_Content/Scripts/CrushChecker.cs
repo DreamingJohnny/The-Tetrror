@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class CrushChecker : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public bool IsCrushed { get { return isCrushed; } }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private bool isCrushed;
+
+	private void OnTriggerEnter2D(Collider2D collision) {
+		isCrushed = true;
+		Debug.Log("Collision triggered!");
+	}
+
+	private void OnTriggerExit2D(Collider2D collision) {
+		isCrushed = false;
+		Debug.Log("Collision stopped!");
+	}
 }
