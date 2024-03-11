@@ -139,6 +139,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6357209156850088606, guid: 548259a725011d648976a29a4fd19aa3, type: 3}
   m_PrefabInstance: {fileID: 2141884421}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &88941172 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8315084911245081461, guid: 548259a725011d648976a29a4fd19aa3, type: 3}
+  m_PrefabInstance: {fileID: 2141884421}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88941170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab381aa705069440957e0261fead210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &120825647 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 132379082016904244, guid: b792f93fafa5c0145bb9cefb6520aea2, type: 3}
@@ -276,6 +287,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb3dc04c12a57ec4ba0dd678b879b28a, type: 3}
+--- !u!114 &1446109071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 288881244441708132, guid: 3df841fcf3bbc9844a18383a9e7c5cf5, type: 3}
+  m_PrefabInstance: {fileID: 5774932996852104320}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45f9d25573499ec4e814386d0da9950b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1573544563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -552,10 +574,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 288881244441708132, guid: 3df841fcf3bbc9844a18383a9e7c5cf5, type: 3}
-      propertyPath: speed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4150121021764239353, guid: 3df841fcf3bbc9844a18383a9e7c5cf5, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -603,10 +621,6 @@ PrefabInstance:
     - target: {fileID: 6945853418709460478, guid: 3df841fcf3bbc9844a18383a9e7c5cf5, type: 3}
       propertyPath: m_Name
       value: Acid
-      objectReference: {fileID: 0}
-    - target: {fileID: 6945853418709460478, guid: 3df841fcf3bbc9844a18383a9e7c5cf5, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -727,6 +741,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8004681203618105400, guid: ac2d7f1ea60c3e34db5b8fe7d95e0fea, type: 3}
+      propertyPath: acid
+      value: 
+      objectReference: {fileID: 1446109071}
+    - target: {fileID: 8004681203618105400, guid: ac2d7f1ea60c3e34db5b8fe7d95e0fea, type: 3}
       propertyPath: blockDropper
       value: 
       objectReference: {fileID: 0}
@@ -734,6 +752,10 @@ PrefabInstance:
       propertyPath: blockSpawner
       value: 
       objectReference: {fileID: 44955622}
+    - target: {fileID: 8004681203618105400, guid: ac2d7f1ea60c3e34db5b8fe7d95e0fea, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 88941172}
     - target: {fileID: 8004681203618105400, guid: ac2d7f1ea60c3e34db5b8fe7d95e0fea, type: 3}
       propertyPath: testTargetObject
       value: 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,8 +6,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
+	
+	#region Events
+	public static event Action OnCrushed;
+	#endregion
 
-	[Header("Ground- and Crushchecking")]
+	#region Ground- and Crushchecking
 	private GroundChecker groundChecker;
 	private CrushChecker crushChecker;
 	public bool IsGrounded {
@@ -20,8 +25,9 @@ public class PlayerController : MonoBehaviour {
 			else return false;
 		}
 	}
+	#endregion
 
-	[Header("Movement")]
+	#region Movement
 	private Vector2 movement;
 	private Rigidbody2D rigidBody;
 	[SerializeField] private float speed;
@@ -29,6 +35,7 @@ public class PlayerController : MonoBehaviour {
 	private bool isJumping;
 	private Vector2 jumpDirection;
 	[SerializeField] private float jumpForce;
+	#endregion
 
 	void Start() {
 		groundChecker = GetComponentInChildren<GroundChecker>();
@@ -65,9 +72,8 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private void Update() {
-		if (IsCrushed) { 
-			Debug.Log("The player is being crushed!");
-			//TODO: At this point we send out an event for the gameHandler to listen to then.
+		if (IsCrushed) {
+			OnCrushed?.Invoke();
 		}
 	}
 

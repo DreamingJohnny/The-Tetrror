@@ -86,7 +86,7 @@ public class BlockDropper : MonoBehaviour {
 			Debug.Log("Couldn't find a target!");
 			return false;
 		}
-		else if (target.TryGetComponent(out PlayerController playerController)) {
+		else if (target.TryGetComponent(out PlayerController _)) {
 			float difference = transform.position.x - target.transform.position.x;
 			difference = Math.Abs(difference);
 			
